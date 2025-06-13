@@ -67,6 +67,6 @@ public class InventoryService {
        // Optional<Product>: Java's way of safely handling the possibility of absence (null safe alternative)
         // Why? because the list might be empty, then there is no product to be returned
         return inventory.stream()
-                .max(Comparator.comparing(Product::getPrice));
+                .max(Comparator.comparing(Product::getPrice)); // Terminal: max
     }
 }
